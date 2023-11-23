@@ -1,0 +1,30 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 0;
+}#banner-div-announcement{
+  margin:auto;
+}
+#banner-image {
+  background-image: url("https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png");
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  color: antiquewhite;
+  height: 20rem;
+  padding-top: 3%;
+}
+#banner-image  p {
+font-size: 16px;
+}
+#banner-anker{
+text-decoration: none;
+color: white;
+padding: 5px 20px;
+position: absolute;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+transform: translate(-50%,-50%);
+border-radius: 10px;
+}
+
+

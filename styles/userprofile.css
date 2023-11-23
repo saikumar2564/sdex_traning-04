@@ -1,0 +1,131 @@
+*{
+    margin: 0%;
+    padding: 0%;
+  }   
+  .rightarrow{
+    border-radius: 50px !important;
+    position: absolute;
+    left: 6%;
+  }
+  .leftarrow{
+    border-radius: 50px !important;
+    position: absolute;
+    left: 17%;
+    top:7px
+  }
+  .parent{
+    z-index: -1;
+  } 
+  .list-items{
+      text-decoration: none;
+      color: gray; 
+  }
+  .sub-items{
+      margin-top: 5px;
+    }
+    .navbar{
+      width: 85%;
+      margin: auto;
+   }
+   #aside{
+    height: 610px;
+    overflow-y: scroll;
+   }
+   #aside::-webkit-scrollbar {
+    width: 8px; 
+  } 
+  #aside::-webkit-scrollbar-thumb {
+    background-color:gray; 
+    border-radius: 6px; 
+}
+#main{
+    height:700px ;
+    overflow-y: scroll;
+}
+#main::-webkit-scrollbar {
+    width: 6px; 
+} 
+#main::-webkit-scrollbar-thumb {
+    background-color:blue; 
+    border-radius:6px
+}
+#bg{
+  background-image: url("https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png ");
+  object-fit: cover;
+  height: 30%;
+  background-repeat: no-repeat;
+}
+.announcement{
+  text-decoration: none;
+  /* border: 1px solid; */
+  padding: 8px;
+  background-color: rgba(204, 204, 204, 0.3);
+}
+.announcement:hover{
+  background-color: rgba(204, 204, 204, 0.7);
+}
+#img{
+  margin: -5% 0 0 2%;
+}
+#card-nav{
+  margin: -2% 0 2% 0;
+}
+#card2{
+  /* width: 20%; */
+  margin-bottom:1% ;
+}
+.gallery{
+  height: 50px;
+  /* width: 70px; */
+}
+.figma{
+  color: #ad2d1e;
+  background-color: rgba(192,50,33,.2) !important;
+}
+.flutter{
+  color: #344ed1;
+  background-color: rgba(58,87,232,.2) !important;
+}
+.blender{
+  color: #d95f18;
+  background-color: rgba(241,106,27,.2) !important;
+}
+.img2{
+  background-color: #3A57E81A;
+}
+.img1{
+  background-color: #079AA21A;
+}
+.img9{
+  background-color: #1AA05333;
+}
+.img7{
+  background-color: #C0322133;
+}
+.img5{
+  background-color: #F16A1B33;
+}
+.anna-sthesia{
+  color: #ad2d1e;
+  background-color: rgba(192,50,33,.2) !important;;
+}
+.comment-attagement{
+  font-size: 1.25rem;
+  position: absolute;
+  right: 1.875rem;
+  bottom: 45px;
+}
+
+.web-design{
+  background-color: #DEE2E633;
+}
+.abstract{
+  background-color: #3A57E81A;
+}
+.icon:hover{
+  color: aliceblue;
+  background-color: blue;
+}
+.icon{
+  border-radius: 20px;
+}

@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header {
+  background-image: url('https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png');
+  object-fit: cover;
+  background-repeat: no-repeat;
+
+}
+#main{
+  margin-top: -660px;
+  margin-left: 16%;
+  
+}
+
+aside > ul, aside > ul > li > a{
+  color: #808080
+}
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-body ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-body .right-panel {
+  display: flex;
+  align-items: center;
+}
+
+.footer-body .right-panel span {
+  margin-right: 5px;
+}
+
+#announcements {
+
+  background-color: rgba(241, 240, 240, 0.2);
+  color: #ffffff;
+
+  border-radius: 8px;
+}
+
+#table {
+  width: 120%;
+  border-collapse: collapse;
+  margin-top: 20px;
+   overflow-x: auto;
+}
+th,
+td {
+  padding: 5px;
+  text-align:left;
+  /* border: 1px solid #8d3030; */
+}
+
+th {
+  color: #989595;
+  background-color: aliceblue;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  /* background-color: #9c8787; */
+  font-size: 16px;
+  color: #a7a3a3;
+}
+td .action-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

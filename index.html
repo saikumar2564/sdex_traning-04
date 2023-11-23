@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User-Profile</title>
+    <link rel="stylesheet" href="./styles/userprofile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-2">
+                <!-- side bar starts -->
+                <aside id="side-bar" class="p-3" style="width: 16.25rem;">
+                    <button class="btn btn-primary rightarrow  " type="button"><i class="fa-solid fa-arrow-right"></i></i></button>
+                    <button class="btn btn-primary leftarrow hidden-items" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+                    <div class="d-flex" id="icon">
+                        <div class="sidenav-mini-icon main-icon" >  
+                            <h5 class="offcanvas-title" id="offcanvasScrollingLabel">
+                                <svg id="icon" style="height: 1.8em;" class="text-primary icon-30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="-0.757324" y="19.2427" width="28" height="4" rx="2" transform="rotate(-45 -0.757324 19.2427)" fill="currentColor"></rect>
+                                    <rect x="7.72803" y="27.728" width="28" height="4" rx="2" transform="rotate(-45 7.72803 27.728)" fill="currentColor"></rect>
+                                    <rect x="10.5366" y="16.3945" width="16" height="4" rx="2" transform="rotate(45 10.5366 16.3945)" fill="currentColor"></rect>
+                                    <rect x="10.5562" y="-0.556152" width="28" height="4" rx="2" transform="rotate(45 10.5562 -0.556152)" fill="currentColor"></rect>
+                                </svg>
+                            </h5>
+                        </div>
+                            <h4 class="hidden-items" id="hope-ui" style="font-size: 1.9rem;margin-left: 10px;margin-bottom: 5px;">Hope UI</h5>     
+                    </div> 
+                    <hr>
+                        <div id="container" style="line-height: 35px;">  
+                            <ul class="sidebar-menu list-unstyled" id="aside">
+                                <!-- home starts -->
+                                <li ><a href="" class=" d-flex align-items-center list-items mt-3"><span class="hidden-items">Home</span><span class="sidenav-mini-icon home">-</span></a>
+                                   <li class="ms-3"><a href="" class=" d-flex align-items-center list-items sub-items "><span class="material-symbols-outlined sidenav-mini-icon"> grid_view </span><span class="ms-3 hidden-items">Dashboard</span></a></li>
+                                   <li class="ms-3"><a href="#horizontal-menu" class="d-flex align-items-center list-items sub-items" data-bs-toggle="collapse" role="button"><span class="material-symbols-outlined sidenav-mini-icon"> event_list </span><span class="ms-3 hidden-items">Menu style</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items"></i></a>
+                                      <ul class="collapse" id="horizontal-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon"> H </i><span class="hidden-items">Horizontal</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon"> D </i><span class="hidden-items">Dual-Horizontal</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon"> D </i><span class="hidden-items">Dual-Compact</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon"> B </i><span class="hidden-items">Boxed-Horizontal</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon"> B </i><span class="hidden-items">Boxed-Fancy</span></a></li>
+                                       </ul>
+                                    </li>
+                                    <li class="ms-3"><a href="" class="d-flex align-items-center list-items sub-items"><i class="fa-solid fa-radio sidenav-mini-icon"></i><span class="ms-3 hidden-items">Design System<span class="badge rounded-pill bg-success item-name ms-2">UI</span></span></a></li>
+                                </li>
+                                <!-- home ends -->
+                                <!-- pages starts -->
+                                <li><a href="" class=" d-flex align-items-center list-items mt-3"><span class="hidden-items">Pages</span><span class=" pages sidenav-mini-icon">-</span></a>
+                                    <li class="ms-3"><a href="#specialpages-menu" class="d-flex align-items-center list-items sub-items shift" data-bs-toggle="collapse" role="button"> <span class="material-symbols-outlined sidenav-mini-icon"> folder_special </span><span class="ms-3 hidden-items">Special Pages</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items "></i></a>
+                                      <ul class="collapse" id="specialpages-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon "> B </i><span class="hidden-items">Billing</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon "> C </i><span class="hidden-items">Calendar</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon "> K </i><span class="hidden-items">kanban</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon "> P </i><span class="hidden-items">Pricing</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon "> R </i><span class="hidden-items">RTL Suppourt</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon "> T </i><span class="hidden-items">TimeLine</span></a></li>
+                                      </ul>
+                                    </li>
+                                   
+                                    <li class="ms-3"><a href="#authentication-menu" class="d-flex align-items-center list-items sub-items shift" data-bs-toggle="collapse" role="button"><span class="material-symbols-outlined sidenav-mini-icon">verified_user</span><span class="ms-3 hidden-items">Authentication</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items "></i></a>
+                                      <ul class="collapse" id="authentication-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> L </i><span class="hidden-items">Login</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> R </i><span class="hidden-items">Register</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> C </i><span class="hidden-items">Conform Mail</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon  d-none"> L </i><span class="hidden-items">Lock Screen</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> R </i><span class="hidden-items">Recover Password</span></a></li>
+                                      </ul>
+                                     </li>
+                                    
+                                    <li class="ms-3"><a href="#users-menu" class="d-flex align-items-center list-items sub-items shift" data-bs-toggle="collapse" role="button"><i class="fa-solid fa-users fs-5 sidenav-mini-icon"></i><span class="ms-3 hidden-items ">Users</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items "></i></a>
+                                      <ul class="collapse" id="users-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="./index.html" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> U </i><span class="hidden-items">User Profile</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="./addUser.html" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> A </i><span class="hidden-items">Add user</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="./userlist1.html" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> U </i><span class="hidden-items">User List</span></a></li>
+                                      </ul>
+                                    </li>
+                                    
+                                    <li class="ms-3"><a href="#utilities-menu" class="d-flex align-items-center list-items sub-items shift" data-bs-toggle="collapse" role="button"><i class="fa-solid fa-bookmark fs-5 sidenav-mini-icon"></i><span class="ms-3 hidden-items ">Utilities</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items"></i></a>
+                                      <ul class="collapse" id="utilities-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> E </i><span class="hidden-items">Error 404</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> E </i><span class="hidden-items">Error 500</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> M </i><span class="hidden-items">Maintainance</span></a></li>
+                                      </ul>
+                                    </li>
+                                
+                                    <li class="ms-3"><a href="#" class="d-flex align-items-center list-items sub-items shift" data-bs-toggle="collapse" role="button"><i class="fa-solid fa-lock fs-5 sidenav-mini-icon"></i><span class="ms-3 hidden-items">Admin</span></a></li>
+                                </li>
+                                <!-- pages ends -->
+                                <!-- elements starts -->
+                                <li><a href="" class=" d-flex align-items-center list-items mt-3"><span class="hidden-items">Elements</span><span class="sidenav-mini-icon elements">-</span></a>
+                                   <li class="ms-3"><a href="#" class="d-flex align-items-center list-items sub-items" data-bs-toggle="collapse" role="button"><i class="fa-solid fa-briefcase sidenav-mini-icon"></i><span class="ms-3 hidden-items">Components</span></a></li>
+                                   <li class="ms-3"><a href="#widget-menu" class="d-flex align-items-center list-items sub-items" data-bs-toggle="collapse" role="button">  <i class="fa-solid fa-ticket sidenav-mini-icon sidenav-mini-icon" style="color: #939495;"></i><span class="ms-3 hidden-items">Widget</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items"></i></a>
+                                      <ul class="collapse" id="widget-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> W </i><span class="hidden-items">Widget Basic</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> W </i><span class="hidden-items">Widget chart</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none"> W </i><span class="hidden-items">Widget card</span></a></li>   
+                                      </ul>
+                                    </li>
+                                    <li class="ms-3"><a href="#map-menu" class="d-flex align-items-center list-items sub-items" data-bs-toggle="collapse" role="button"><i class="fa-solid fa-location-dot sidenav-mini-icon"></i><span class="ms-3 hidden-items ">Maps</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items"></i></a>
+                                      <ul class="collapse" id="map-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> G </i><span class="hidden-items">Google</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> V </i><span class="hidden-items">Vector</span></a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="ms-3"><a href="#form-menu" class="d-flex align-items-center list-items sub-items" data-bs-toggle="collapse" role="button"><i class="fa-solid fa-file-lines sidenav-mini-icon"></i><span class="ms-3 hidden-items ">Forms</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items"></i></a>
+                                      <ul class="collapse" id="form-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> E </i><span class="hidden-items">Elements</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> W </i><span class="hidden-items">Wizard</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> V </i><span class="hidden-items">Validation</span></a></li>   
+                                      </ul>
+                                    </li>
+                                    <li class="ms-3"><a href="#table-menu" class="d-flex align-items-center list-items sub-items" data-bs-toggle="collapse" role="button"><i class="fa-solid fa-table sidenav-mini-icon"></i><span class="ms-3 hidden-items">Table</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items"></i></a>
+                                      <ul class="collapse" id="table-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> B </i><span class="hidden-items">Bootstrap Table</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> D </i><span class="hidden-items">Datatable</span></a></li>
+                                      </ul>
+                                    </li>
+                                    <li class="ms-3"><a href="#form-menu" class="d-flex align-items-center list-items sub-items" data-bs-toggle="collapse" role="button"> <i class="fa-solid fa-circle-info sidenav-mini-icon"></i><span class="ms-3 hidden-items ">Icons</span><i class="fa-solid fa-angle-down ms-3 mt-1 hidden-items"></i></a>
+                                      <ul class="collapse" id="form-menu" type="disc">
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> S </i><span class="hidden-items">Solid</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> O </i><span class="hidden-items">Outlined</span></a></li>
+                                        <li class="py-2 alpha-icon"><a href="" class="list-items sub-items"><i class="sidenav-mini-icon d-none "> D </i><span class="hidden-items">Dual Tone</span></a></li>   
+                                      </ul>
+                                    </li>
+                                </li>
+                                <!--elements ends  -->
+                            </ul>
+                        </div>
+                </aside>
+                <!-- side bar ends -->
+            </div>
+            <!-- side bar ends col lg 3 -->
+            <div class="col-lg-10" id="main">
+                 <!-- nav starts -->
+                 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                  <div class="container-fluid">
+                    <div style="width: 250px;" class="input-group search-input rounded-2 border border-1 border-secondary">
+                      <i class="fa-solid fa-magnifying-glass text-secondary input-group-text py-2 bg-light border-0 "></i>
+                      <input type="search" class="form-control border-0 w-50" placeholder="Search...">
+                    </div>
+                    <div class="d-flex">
+                      <a class="btn bg-primary text-light px-4  me-4 h-50 mt-2" href="#"><i class="fas fa-paper-plane"></i> Go
+                        Pro</a>
+          
+                      <div class="dropdown">
+                        <button title="Country" class="btn dropdown" type="button" id="languageDropdown" data-bs-toggle="dropdown"
+                          aria-expanded="false">
+                          <img style="height: 30px;width: 30px;border-radius: 50%;"
+                            src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/Flag/flag001.png">
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="languageDropdown">
+                          <li><a class="dropdown-item" href="#"><img
+                                src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/Flag/flag-03.png"
+                                alt="">Spanish</a></li>
+                          <li><a class="dropdown-item" href="#"><img
+                                src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/Flag/flag-04.png"
+                                alt="">Italian</a></li>
+                          <li><a class="dropdown-item" href="#"><img
+                                src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/Flag/flag-02.png"
+                                alt="">French</a></li>
+                          <li><a class="dropdown-item" href="#"><img
+                                src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/Flag/flag-05.png"
+                                alt="">German</a></li>
+                          <li><a class="dropdown-item" href="#"><img
+                                src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/Flag/flag-06.png"
+                                alt="">Japanese</a></li>
+                        </ul>
+                      </div>
+          
+                      <div class="dropdown">
+                        <button title="Notifications" class="btn dropdown" type="button" id="notificationDropdown"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <a href="#" class="me-4"><i class="fas fa-bell pt-3 fs-5 text-secondary"></i></a>
+                        </button>
+                        <ul style="min-width: 250px;" class="dropdown-menu" aria-labelledby="notificationDropdown">
+                          <li>
+                            <h5 style="background-color: blue;color: white;">All Notifications</h6>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/01.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">Emma Watson Bni</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">95 MB</p>
+                                    <small class="float-end font-size-12">Just Now</small>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/02.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">New Custmer is join</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">Cyst bni</p>
+                                    <small class="float-end font-size-8">5 Days ago</small>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/03.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">Two Customer is left</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">Cyst bni</p>
+                                    <small class="float-end font-size-8">2 Days ago</small>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/04.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">New Mail From Fenny</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">Cyst bni</p>
+                                    <small class="float-end font-size-8">3 Days ago</small>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+          
+                      <div class="dropdown">
+                        <button title="Messages" class="btn dropdown" type="button" id="notificationDropdown"
+                          data-bs-toggle="dropdown" aria-expanded="false">
+                          <a href="#" class="me-4"><i class="fas fa-envelope pt-3 fs-5 text-secondary "></i></a>
+                        </button>
+                        <ul style="min-width: 250px;font-size: medium;max-height: fit-content;" class="dropdown-menu"
+                          aria-labelledby="notificationDropdown">
+                          <li>
+                            <h5 style="background-color: blue;color: white;">All Messages</h5>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/01.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">Bni Emma Watson</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">13 Jun</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/02.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">Lorem Ipsum Watson</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">20 Apr</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/03.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">Why do we use it?</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">30 Jun</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/04.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">Variations Passages</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">12 Sep</p>
+                                  </div>
+                                </div>
+                              </div>
+                              <hr>
+                            </a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="#">
+                              <div class="d-flex align-items-center">
+                                <img style="height: 32px;width: 32px;" class="p-1 avatar-40 rounded-pill bg-soft-primary"
+                                  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/05.png" alt="">
+                                <div class="ms-3 w-100">
+                                  <h6 class="mb-0 ">Lorem Ipsum generators</h6>
+                                  <div class="d-flex justify-content-between align-items-center">
+                                    <p class="mb-0">5 Dec</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <a class="py-0 nav-link d-flex align-items-center show" href="#" id="navbarDropdown" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="true">
+                        <img title=" Holder" style="height: 50px; width: 50px; border-radius: 50%;"
+                          src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/avatars/01.png" alt="User-Profile"
+                          class="theme-color-default-img img-fluid avatar avatar-50 avatar-rounded">
+                        <div title="Account Details" class="caption ms-3 d-none d-md-block ">
+                          <h6 class="mb-0 caption-title">Austin Robertson</h6>
+                          <p class="mb-0 caption-sub-title">Marketing Administrator</p>
+                        </div>
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="../../dashboard/app/user-profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="../../dashboard/app/user-privacy-setting.html">Privacy Setting</a></li>
+                        <li>
+                          <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="../../dashboard/auth/sign-in.html">Logout</a></li>
+                      </ul>
+          
+                      <!-- <h6 class="me-4 pt-1">Austin Robertson<br><span class="text-secondary fw-4">Marketing Administrator</span>
+                      </h6> -->
+                    </div>
+                  </div>
+                </nav>
+        <!-- nav ends -->
+        <!-- user profile starts -->
+        <main>
+            <!-- background img card -->
+              <div id="bg" class="d-flex flex-wrap justify-content-between p-5 h-50 rounded-3" >
+                  <div class="flex-wrap d-inline h-25">
+                      <h1 class="text-light">Hello Devs</h1>
+                      <p class="text-light ">We are on a mission to help developers like you build successful projects for FREE.</p>
+                  </div>
+                  <div class="h-25">
+                      <a href="" class="text-light announcement "><i class="fa-solid fa-microphone-lines"></i> Announcement</a>
+                  </div>
+              </div>
+              <!-- background img ends -->
+              <div class="container-fluid">
+                <div class="row mx-1  ">
+                  <div class="col-lg-12">
+                <!-- nav card -->
+                    <div class="card rounded-3 col-sm" id="card-nav">
+                      <div class="card-body ">
+                        <img id="img" src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/avatars/01.png" alt="" style="height: 100px;width: 90px;border-radius: 50%;">
+                        <span><b class="fs-4">Austin Robertson</b><span class="opacity-50"> - Web Developer</span><span>
+                        <ul class="nav nav-pills d-flex justify-content-end" style="margin-top: -30px;">
+                          <li class="nav-item nav-link active rounded-4">Feed</li>
+                          <li class="nav-item nav-link">Activity</a></li>
+                          <li class="nav-item"><a href="" class="nav-link">Friends</a></li>
+                          <li class="nav-item"><a href="" class="nav-link">Profile</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                   </div> 
+                <!--nav ends-->
+                <!-- news card starts -->
+                <div class="col-lg-3">
+                 <div class="card mb-3" id="card2">
+                  <div class="card-body ">
+                    <h3 class="card-title ">News</h3>
+                    <ul class="list-inline">
+                      <li class="d-flex  opacity-75 ">
+                        <i class="fa-solid fa-message me-2 mt-3"></i>
+                        <p class="card-text fs-4 "> there is a meetup in your city on fryday at 19:00. <a href="" class="text-decoration-none text-primary fs-4">see details</a></p>
+                      </li>
+                      <li class="d-flex opacity-75">
+                        <i class="fa-solid fa-message me-2 mt-3 "></i>
+                        <p class="card-text fs-4"> 20% off coupon on selected items at pharmaprix</p>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- news ends -->
+                <!-- Gallery card -->
+                <div class="card mb-3" id="card2">
+                  <div class="card-body ">
+                    <h3 class="card-title ">Gallery</h3>
+                    <div class="flex-wrap gap-3 d-flex">           
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/04.png" alt="" class="gallery img1">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/02.png" alt="" class="gallery img2">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/08.png" alt="" class="gallery img1">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/04.png" alt="" class="gallery img2">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/02.png" alt="" class="gallery img5">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/06.png" alt="" class="gallery img2">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/05.png" alt="" class="gallery img7">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/shapes/04.png" alt="" class="gallery img2">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/01.png" alt="" class="gallery img9"></div>
+                  </div>
+                </div>
+                <!-- gallery ends -->
+                <!-- Twitter card -->
+                <div class="card" id="card2" >
+                  <div class="card-body">
+                    <h3 class="card-title">Twitter Feeds</h3>
+                    <ul class="list-inline">
+                      <li class="d-flex gap-3">
+                        <img  src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/03.png" alt="" class="rounded-pill gallery figma">
+                        <p><b>Figma Community</b> <br> @figma20 <i class="fa-solid fa-circle-check text-primary"></i></p>
+                      </li>
+                    </ul>
+                   <p class="fs-4 opacity-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br> <a href="" class="text-decoration-none">#html</a> <a href="" class="text-decoration-none">#Bootstrap</a><br>07 Jan 2021</p>
+                  </div>
+                  <!-- flutter -->
+                  <div class="card-body">
+                    <ul class="list-inline">
+                      <li class="d-flex gap-3">
+                        <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/04.png" alt="" class="rounded-pill gallery flutter">
+                        <p><b>Flutter</b> <br> @jane59 <i class="fa-solid fa-circle-check text-primary"></i></p>
+                      </li>
+                    </ul>
+                    <p class="fs-4 opacity-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br><a href="" class="text-decoration-none">#Js</a> <a href="" class="text-decoration-none">#Bootstrap</a> <br>18 Feb 2021</p>
+                  </div>
+                  <!-- blender -->
+                  <div class="card-body">
+                    <ul class="list-inline">
+                      <li class="d-flex gap-3">
+                        <img src="	https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/02.png" alt="" class="rounded-pill blender gallery">
+                        <p><b>Blender</b> <br> @blender59  <i class="fa-solid fa-circle-check text-primary"></i></p>
+                      </li>
+                    </ul>
+                    <p class="fs-4 opacity-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry <br><a href="" class="text-decoration-none">#Html</a> <a href="" class="text-decoration-none">#CSS</a> <br>15 Mar 2021</p>
+                  </div>
+                  <!-- blender ends -->
+                </div>
+                </div>
+                <!-- twitter ends -->
+                <!-- Anna-sthesia card -->
+                <div class="col-lg-6 px-0">
+                <div class="card mb-3" >
+                  <div class="card-title d-flex justify-content-between align-items-center">
+                    <div class="d-flex gap-3 mt-3 ms-3">
+                    <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/avatars/02.png" alt="" class="rounded-pill anna-sthesia">
+                    <p><b>Anna Sthesia</b><br><span class="text-primary">colleages</span></p>
+                  </div>
+                    <div class="dropdown me-4 ">
+                      <span class="dropdown-toggle" id="dropdownMenuButton07" data-bs-toggle="dropdown" aria-expanded="false" role="button"> 1 Hr</span>
+                      <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton07">
+                         <a class="dropdown-item " href="javascript:void(0);">Action</a>
+                         <a class="dropdown-item " href="javascript:void(0);">Another action</a>
+                         <a class="dropdown-item " href="javascript:void(0);">Something else here</a>
+                      </div>
+                   </div>
+                  </div>
+                  <img class="img-fluid"src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/pages/02-page.png" alt="">
+                  <div class="card-body">              
+                    <div>
+                      <div class="d-flex justify-content-between" >
+                        <span><i class="fa-regular fa-heart opacity-75"></i> 140 <i class="fa-regular fa-message opacity-75  mt-2"></i> 140</span>
+                        <span><i class="fa-solid  fa-share-nodes"></i> 99 share</span>
+                      </div>
+                      <p class="opacity-75 fs-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus</p>
+                      <div>
+                        <ul class="list-inline">
+                          <li class="d-flex gap-3">
+                            <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/avatars/03.png" alt="" class="gallery flutter rounded-pill">
+                            <p class="gap-3"><b>Monty Carlo</b> <br>Lorem ipsum dolor sit amet <br><i class="fa-regular fa-heart text-primary"></i><a href="" class="text-decoration-none"> likes</a> <i class="fa-solid fa-share fa-rotate-180 text-primary"></i> <a href="" class="text-decoration-none"> reply</a> <a href="" class="text-decoration-none"> translate</a></p>
+                          </li>
+                        </ul>
+                        <ul class="list-inline">
+                          <li class="d-flex gap-3">
+                             <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/avatars/04.png" alt="" class="gallery rounded-pill figma">
+                             <p>
+                              <b>Paul Molive</b> <br>
+                              Lorem ipsum dolor sit amet <br>
+                              <i class="fa-regular fa-heart text-primary"></i><a href="" class="text-decoration-none"> likes</a>
+                              <i class="fa-solid fa-share fa-rotate-180 text-primary"></i> <a href="" class="text-decoration-none"> reply</a>
+                              <a href="" class="text-decoration-none"> translate</a>
+                            </p>
+                          </li>
+                        </ul>
+                        <form action="">
+                          <input type="text" class="form-control rounded" placeholder="Lovely!">
+                          <div class="comment-attagement d-flex">
+                              <a href="" class="me-2 text-body"><i class="fa-regular fa-face-smile"></i></a>
+                              <a href="" class="text-body"><i class="fa-solid fa-camera"></i></a>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- anna-sthesia ends -->
+              <!-- Wade warren -->
+              <div class="card" >
+                <div class="card-body">
+                  <ul class="list-inline">
+                    <li class="d-flex justify-content-between">
+                      <div class="d-flex gap-3">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/avatars/05.png" alt="" class="gallery rounded-pill flutter">
+                      <p><b>Wade Warren</b> <br><a href="" class="text-decoration-none">colleages</a></p>
+                    </div>
+                      <div class="dropdown me-4 mt-2">
+                        <span class="dropdown-toggle" id="dropdownMenuButton07" data-bs-toggle="dropdown" aria-expanded="false" role="button"> 1 Hr</span>
+                        <div class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton07">
+                           <a class="dropdown-item " href="javascript:void(0);">Action</a>
+                           <a class="dropdown-item " href="javascript:void(0);">Another action</a>
+                           <a class="dropdown-item " href="javascript:void(0);">Something else here</a>
+                        </div>
+                     </div>
+                    </li>
+                  </ul>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi nulla dolor, ornare at commodo non, feugiat non nisi. Phasellus faucibus mollis pharetra. Proin blandit ac massa sed rhoncus</p>
+                  <div class="d-flex justify-content-between mb-3">
+                    <span><i class="fa-regular fa-heart opacity-75"></i> 140 <i class="fa-regular fa-message opacity-75  mt-2"></i> 140</span>
+                    <span><i class="fa-solid  fa-share-nodes"></i> 99 share</span>
+                  </div>
+                  <form action="">
+                    <input type="text" class="form-control rounded" placeholder="Lovely!">
+                    <div class="comment-attagement d-flex">
+                        <a href="" class="me-2 text-body"><i class="fa-regular fa-face-smile"></i></a>
+                        <a href="" class="text-body"><i class="fa-solid fa-camera"></i></a>
+                    </div>
+                   </form> 
+                </div>
+      
+              </div>
+              </div>
+              <!-- wade warren ends -->
+              <!-- aboud card -->
+              <div class="col-lg-3">
+              <div class="card mb-3" >
+                <div class="card-body">
+                  <h3>About</h3>
+                  <p>Lorem ipsum dolor sit amet, contur adipiscing elit.</p>
+                  <p>Email : <a href="" class="text-decoration-none">nikjone@demoo.com</a></p>
+                  <p>Phone : <a href="" class="text-decoration-none">001 2351 256 12</a></p>
+                  <p>Location: USA</p>
+                </div>
+              </div>
+              <!-- about end -->
+              <!-- Stories card-->
+              <div class="card mb-3"  >
+                <div class="card-body">
+                  <h3>Stories</h3>
+                  <ul class="list-inline">
+                    <li class="d-flex gap-2">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/06.png" alt="" class="gallery  rounded-pill web-design">
+                      <p><b class="fs-4">Web Design</b> <br>1 hour ago</p>
+                    </li>
+                    <li class="d-flex gap-2">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/03.png" alt="" class="gallery rounded-pill figma">
+                      <p><b class="fs-4">App Design</b> <br>4 hours ago</p>
+                    </li>
+                    <li class="d-flex gap-2">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/07.png" alt="" class="gallery rounded-pill abstract">
+                      <p><b class="fs-4">Abstract Design</b><br>9 hours ago</p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- stories end -->
+              <!-- Suggesions card -->
+              <div class="card">
+                <div>
+                  <div class="card-body"> <h3>Suggesions</h3></div>
+                  <!-- 1st ul -->
+                  <ul class="d-flex justify-content-between px-2" type="none">
+                    <li class="d-flex gap-3">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/05.png" alt="" class="gallery rounded-pill img7">
+                      <p><b>Paul Molive</b> <br>4 mutual friends</p>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user-plus border border-2 border-primary h-40 w-80 rounded-5 p-1 icon"  class="rounded-pill"></i></a></li>
+                  </ul>
+                  <!-- 2nd ul -->
+                  <ul class="d-flex justify-content-between px-2" type="none">
+                    <li class="d-flex gap-3">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/03.png" alt="" class="gallery rounded-pill figma">
+                      <p><b>Robert Fox</b> <br>4 mutual friends</p>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user-plus border border-2 border-primary h-40 w-80 rounded-5 p-1 icon"></i></a></li>
+                  </ul>
+                  <!-- 3rd ul -->
+                  <ul class="d-flex justify-content-between px-2" type="none">
+                    <li class="d-flex gap-3">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/06.png" alt="" class="gallery rounded-pill web-design">
+                      <p><b>Jenny Wilson</b> <br>6 mutual friends</p>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user-plus border border-2 border-primary h-40 w-80 rounded-5 p-1 icon"></i></a></li>
+                  </ul>
+                  <!-- 4th ul -->
+                  <ul class="d-flex justify-content-between px-2" type="none">
+                    <li class="d-flex gap-3">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/07.png" alt="" class="gallery rounded-pill abstract">
+                      <p><b>Cody Fisher</b> <br>8 mutual friends</p>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user-plus border border-2 border-primary h-40 w-80 rounded-5 p-1 icon"></i></a></li>
+                  </ul>
+                  <!-- 5th ul -->
+                  <ul class="d-flex justify-content-between px-2" type="none">
+                    <li class="d-flex gap-3">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/04.png" alt="" class="gallery  rounded-pill flutter">
+                      <p><b>Bessie Cooper</b> <br>1 mutual friends</p>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user-plus  border border-2 border-primary h-40 w-80 rounded-5 p-1 icon" ></i></a></li>
+                  </ul>
+                  <!-- 6th ul -->
+                  <ul class="d-flex justify-content-between px-2" type="none">
+                    <li class="d-flex gap-3">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/02.png" alt="" class="gallery rounded-pill blender">
+                      <p><b>Wade Warren</b> <br>3 mutual friends</p>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user-plus  border border-2 border-primary h-40 w-80 rounded-5 p-1 icon" ></i></a></li>
+                  </ul>
+                  <!-- 7th ul -->
+                  <ul class="d-flex justify-content-between px-2" type="none">
+                    <li class="d-flex gap-3">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/01.png" alt="" class="gallery rounded-pill img9">
+                      <p><b>Guy Hawkins</b> <br>12 mutual friends</p>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user-plus border border-2 border-primary h-40 w-80 rounded-5 p-1 icon" ></i></a></li>
+                  </ul>
+                  <!-- 8th ul -->
+                  <ul class="d-flex justify-content-between px-2" type="none">
+                    <li class="d-flex gap-1">
+                      <img src="https://templates.iqonic.design/hope-ui/html/dist/assets/images/icons/08.png" alt="" class="gallery rounded-pill flutter">
+                      <p><b>Floyd Miles</b> <br>2 mutual friends</p>
+                    </li>
+                    <li><a href=""><i class="fa-solid fa-user-plus border border-2 border-primary h-40 w-80 rounded-5 p-1 icon" ></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              </div>
+              <!-- suggesions ends -->
+            </div>
+          </div>
+          </main>
+        <!-- user profile ends -->
+            </div>
+        </div>
+    </div>        
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./srcipts/user-profile.js"></script>
+</body>
+</html>

@@ -1,2 +1,2 @@
-# sdex_traning-04
+# sdex_traning_03
 bootstrap assignment at sdex

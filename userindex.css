@@ -1,0 +1,193 @@
+body{
+    background-color: #f8f9fa;
+    }
+  
+  *, ::after, ::before {
+      box-sizing: border-box;
+  }
+  
+  .card{
+    border:none;
+    margin-bottom:1.5rem;
+  }
+  
+  /* nav CSS */
+  .input-group-text{
+      background-color: #fff;
+      border: none;
+  }
+  /* .form-control{
+      border: none;
+      width: 100%;
+  } */
+  .form-control {
+    display: block;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #8a92a6;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #eee;
+    appearance: none;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0 0;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out,-webkit-box-shadow .15s ease-in-out;
+  }
+  
+  /* user-profile CSS */
+  .header{
+      background-image: url("https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png");
+      background-repeat: no-repeat;
+      height: 100em;
+  }
+  
+  .btn-smoky {
+      background-color: rgba(255, 255, 255, 0.2);
+      color: white; 
+    }
+    
+    .btn-smoky:hover {
+      background-color: rgba(255, 255, 255, 0.4);
+    }
+   
+  
+    .profileImage{
+      height: 6rem;
+      width:6rem; 
+      margin-top: -3rem;
+      border-radius:5rem;
+      padding:0;
+      border:4px solid white;
+    }
+  
+    .gallary{
+      /* width:80px; */
+      height: 70px;
+    }
+  
+    .inputFieldIcons{
+      position: absolute;
+      /* top:-20%;
+      left:88%; */
+      right: 1.875rem;
+      bottom: 21px;
+    }
+    .storiesIcons,.suggestionsIcons{
+      height:50px;
+      width:50px;
+    }
+    .icon:hover{
+      background-color: blue;
+      color: #fff ;
+    }
+    .figma{
+      color: #ad2d1e;
+      background-color: rgba(192,50,33,.2) !important;
+  }
+  .flutter{
+      color: #344ed1;
+      background-color: rgba(58,87,232,.2) !important;
+  }
+  .blender{
+      color: #d95f18;
+      background-color: rgba(241,106,27,.2) !important;
+  }
+  .img2{
+      background-color: #3A57E81A;
+  }
+  .img1{
+      background-color: #079AA21A;
+  }
+  .img9{
+      background-color: #1AA05333;
+  }
+  .img7{
+      background-color: #C0322133;
+  }
+  .img5{
+      background-color: #F16A1B33;
+  }
+  .abstract{
+      background-color: #3A57E81A;
+  }
+  .web-design{
+      background-color: #DEE2E633;
+  }
+  .anna-sthesia{
+      color: aliceblue;
+      background-color: rgba(192,50,33,.2);
+  }
+  
+  
+  /* Sidebar Css */
+  .list-unstyled li a{
+    text-decoration: none;
+    color: gray;
+  }
+  
+  
+  
+  /* Scrollbar styles*/
+  #scroll {
+    height: 520px;
+    overflow-y: scroll;  
+    overflow-x: hidden;
+    
+  }
+  
+  #scroll::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  #scroll::-webkit-scrollbar-thumb {
+    background-color: gray;
+    border-radius: 10px;
+  }
+  
+  
+  
+  /* AddUser form file CSS */
+  .header{
+    background-image:url('https://templates.iqonic.design/hope-ui/html/dist/assets/images/dashboard/top-header.png');
+    object-fit: cover;
+    background-repeat: no-repeat;
+  
+  }
+  #announcements{
+    border: 1px ;
+    box-shadow: 2px 2px 5px; 
+  }
+  
+  
+  .sidenav{
+    width:16%;
+    /* ps-3  */
+    /* px-0; */
+    margin-top:10px;
+    padding-left:10px;
+    padding-right:0px;
+    position:fixed;
+  }
+  
+  .main{
+    width:84%;
+    margin-left: 16%;
+    
+    /* background-color: #a1a2a3; */
+  }
+  #main{
+    margin-top:-75%;
+  }
+  
+  #themeButton{
+    border-radius: 50px;
+  }
+  @media only screen and (max-width: 768px) {
+  aside{
+    width:"0px";
+    z-index:-1;
+  }
+  
+  }
