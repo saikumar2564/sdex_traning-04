@@ -1,5 +1,5 @@
 let tableBody = document.getElementById("tablebody");
-const url = "https://mock-api-template-rh6s.onrender.com/userlist";
+const url = "https://mock-api-template2-qp8w.onrender.com/userlist";
 let table = document.getElementById("user-list-table");
 
 window.addEventListener("load", () => {
